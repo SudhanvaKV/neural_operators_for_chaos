@@ -2,7 +2,7 @@
   <img src="https://github.com/roxie62/neural_operators_for_chaos/blob/main/presentations/diagram_emulator.png" width="700">
 </p>
 
-This is the implementation for the NeurIPS 2023 paper "[Training neural operators to preserve invariant measures of chaotic attractors](https://openreview.net/pdf?id=8xx0pyMOW1)".
+LALAThis is the implementation for the NeurIPS 2023 paper "[Training neural operators to preserve invariant measures of chaotic attractors](https://openreview.net/pdf?id=8xx0pyMOW1)".
 
 ```
 @article{jiang2023training,
