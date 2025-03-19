@@ -21,12 +21,12 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 
 python -m torch.distributed.launch \
---nproc_per_node=4 --master_port=${port} scripts/main.py \
+--nproc_per_node=1 --master_port=${port} scripts/main.py \
   --l96 \
-  --batch_size 25 \
-  --metric_epochs 1000 \
-  --batch_size_metricL 250 \
-  --bank_size 1000 \
+  --batch_size 10 \
+  --metric_epochs 100 \
+  --batch_size_metricL 25 \
+  --bank_size 20 \
   --embed_dim 128 \
   --modes 28 \
   --width 64 \
@@ -35,3 +35,4 @@ python -m torch.distributed.launch \
   --noisy_scale 0.3 \
   --train_operator \
   --train_metric \
+  --local_rank 0 \
