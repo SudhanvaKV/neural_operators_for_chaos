@@ -38,7 +38,7 @@ parser.add_argument('--bank_size', default = 0, type = int)
 parser.add_argument('--seed', default = 34, type = int)
 parser.add_argument('--T_metricL_traj_alone', default = 0.3, type = float)
 parser.add_argument('--max_tau_metricL', default = 0.7, type = float)
-
+parser.add_argument('--local-rank', default=-1, type=int)
 parser.add_argument('--prefix', default = '', type = str)
 parser.add_argument('--multiprocessing_distributed', action = 'store_true')
 parser.add_argument('--world-size', default=-1, type=int,
